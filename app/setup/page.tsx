@@ -38,7 +38,9 @@ export default function SetupPage() {
 
   // API Step
   const [useAzureOpenai, setUseAzureOpenai] = useState(false)
-  const [openaiAPIKey, setOpenaiAPIKey] = useState("")
+  const [openaiAPIKey, setOpenaiAPIKey] = useState(
+    process.env.NEXT_PUBLIC_OPEN_AI_KEY || ""
+  )
   const [openaiOrgID, setOpenaiOrgID] = useState("")
   const [azureOpenaiAPIKey, setAzureOpenaiAPIKey] = useState("")
   const [azureOpenaiEndpoint, setAzureOpenaiEndpoint] = useState("")

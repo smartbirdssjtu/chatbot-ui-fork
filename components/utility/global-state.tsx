@@ -108,7 +108,7 @@ export const GlobalState: FC<GlobalStateProps> = ({ children }) => {
 
   useEffect(() => {
     if (process.env.NEXT_PUBLIC_OLLAMA_URL) {
-      fetchOllamaModels()
+      // fetchOllamaModels()
     }
 
     fetchStartingData()
